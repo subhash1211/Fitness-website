@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Diet-Yoga</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.core.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+   <!-- Google Font -->
+   <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,600,700,800,900&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css?family=Oswald:300,400,500,600,700&display=swap" rel="stylesheet">
+
+   <!-- Css Styles -->
+   <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+   <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
+   <link rel="stylesheet" href="css/elegant-icons.css" type="text/css">
+   <link rel="stylesheet" href="css/nice-select.css" type="text/css">
+   <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
+   <link rel="stylesheet" href="css/magnific-popup.css" type="text/css">
+   <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
+   <link rel="stylesheet" href="css/style.css" type="text/css">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Your existing CSS styles */
+
+    /* Add styles for the navigation bar */
+    .navbar {
+      background-color: #333; /* Background color */
+      overflow: hidden;
+    }
+
+    .navbar a {
+      float: left;
+      display: block;
+      color: #f2f2f2; /* Text color */
+      text-align: center;
+      padding: 18px 20px; /* Padding */
+      text-decoration: none;
+      margin-left: 280px;
+    }
+
+    .navbar a:hover {
+      background-color: #ddd; /* Hover background color */
+      color: black; /* Hover text color */
+    }
+
+ 
+
+    /* Additional styles */
+    .heading {
+      margin: 0;
+      color: #111111;
+      font-size: 50px;
+      font-weight: 700;
+      font-family: "Oswald", sans-serif;
+    }
+
+    .section {
+      position: relative;
+      height: 100vh;
+      background-size: cover;
+      background-position: center;
+      overflow: hidden;
+    }
+
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+    }
+
+    .content {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      color: #fff;
+      z-index: 1;
+    }
+
+    .article {
+      padding: 20px;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .article h1 {
+      color: #fff;
+    }
+
+    .article p {
+      color: #ddd;
+    }
+
+    .key-points {
+      padding: 30px;
+      max-width:1200px;
+      margin: 20px auto; /* Added space */
+      background-color: rgba(237, 165, 165, 0.8);
+      border-radius: 10px;
+    }
+
+    .key-points h2 {
+      color: #2d2187;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .key-points ul {
+      list-style-type: disc;
+      padding: 0;
+      margin: 0;
+    }
+
+    .key-points li {
+      margin-bottom: 10px;
+    }
+
+    .slides {
+      max-width: 600px;
+      margin: 20px auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .slide {
+      width: 100%;
+      height: auto;
+      max-height: 400px;
+      margin: 0 10px;
+    }
+
+    /* Navigation arrows */
+    .glide__arrows {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      z-index: 2;
+    }
+
+    .glide__arrow {
+      background: rgba(0, 0, 0, 0.5);
+      color: #fff;
+      padding: 10px;
+      border: none;
+      cursor: pointer;
+      transition: background 0.3s ease;
+      font-size: 24px;
+    }
+
+    .glide__arrow:hover {
+      background: rgba(0, 0, 0, 0.8);
+    }
+  </style>
+</head>
+<body>
+
+ <!-- Page Preloder -->
+ <div id="preloder">
+  <div class="loader"></div>
+</div>
+
+<!-- Header Section Begin -->
+<header class="header-section header-normal">
+  <div class="container-fluid">
+      <div class="logo">
+          <a href="./index.html">
+            <img src="img/logoo.png" width="135" height="32" alt="Fit Foundry" >
+          </a>
+      </div>
+      <div class="top-social">
+          
+          <a href="#"><i class="fa fa-twitter"></i></a>
+          <a href="#"><i class="fa fa-youtube-play"></i></a>
+          <a href="#"><i class="fa fa-instagram"></i></a>
+      </div>
+      <div class="container">
+          <div class="nav-menu">
+              <nav class="mainmenu mobile-menu">
+                  <ul>
+                      <li><a href="./index.html">Home</a></li>
+                      <li><a href="./about-us.html">About us</a></li>
+                      <li><a href="./schedule.html">Schedule</a></li>
+                      <li class="active"><a href="./blog.html">Blog</a>
+                          <ul class="dropdown">
+                              <li><a href="./about-us.html">About us</a></li>
+                              <li><a href="./gallery.html">Gallery</a></li>
+                              <li><a href="./blog-single.html">Blog Details</a></li>
+                              <li><a href="./diet-yoga.html">Diet & Yoga</a></li>
+                              <li><a href="./training.html">Training</a></li>
+                          </ul>
+                      </li>
+                      <li><a href="./contact.html">Contacts</a></li>
+                      <li><a href="./login.html">Login</a></li>
+                      <li><a href="./form.html">Register</a></li>
+                  </ul>
+              </nav>
+          </div>
+      </div>
+      <div id="mobile-menu-wrap"></div>
+  </div>
+</header>
+
+<!-- First Section -->
+<section id="home" class="section" style="background-image: url('img/diet-yoga/diet-bg.jpg');">
+  <div class="overlay"></div>
+  <div class="content">
+    <div class="article">
+      <h1 class="heading">"The Benefits of Diet"</h1>
+      <p> Diet plays a crucial role in overall health and well-being, impacting everything from energy levels to disease prevention. In today's fast-paced world, finding time to prioritize our health and well-being can often feel like a challenge.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Add space between article and key points -->
+<div style="height: 50px;"></div>
+
+<!-- Key Points Section -->
+<section id="diet" class="key-points">
+  <h2>Key Points</h2>
+  <ul>
+    <li><b>Nutrient Balance:</b> A healthy diet should include a balance of macronutrients (carbohydrates, proteins, and fats) and micronutrients (vitamins and minerals) to support bodily functions and maintain optimal health.</li><br>
+    <li><b>Variety:</b> Consuming a wide variety of foods ensures that you get a diverse range of nutrients, promoting better health and reducing the risk of nutrient deficiencies.</li><br>
+    <li><b>Whole Foods:</b> Whole foods, such as fruits, vegetables, whole grains, lean proteins, and healthy fats, are rich in nutrients and fiber, making them essential components of a healthy diet.</li><br>
+    <li><b>Portion Control:</b> Controlling portion sizes helps prevent overeating and maintains a healthy weight. It's essential to be mindful of portion sizes, especially when eating calorie-dense foods.</li><br>
+    <li><b>Hydration:</b> Adequate hydration is vital for overall health and well-being. Drinking plenty of water throughout the day helps regulate body temperature, aids digestion, and supports cellular function.</li><br>
+    <li><b>Meal Timing:</b> Eating regular meals and snacks throughout the day helps maintain stable blood sugar levels and provides sustained energy. It's essential to listen to your body's hunger and fullness cues and eat when you're hungry.</li><br>
+    <li><b>Moderation:</b> Enjoying indulgent foods occasionally is part of a balanced diet. Practicing moderation and allowing yourself to enjoy your favorite treats in moderation can help prevent feelings of deprivation and promote long-term dietary adherence.</li><br>
+    <li><b>Consultation:</b> For personalized dietary advice or if you have specific health concerns, consulting with a registered dietitian or healthcare professional can provide valuable guidance and support on making healthy dietary choices.</li>
+  </ul>
+</section>
+
+<!-- Carousel for Article 1 -->
+<div class="glide glide1" style="margin-top: 50px;">
+  <div class="glide__track" data-glide-el="track">
+    <ul class="glide__slides">
+      <li class="glide__slide"><img class="slide" src="img/diet-yoga/img-1.jpg" alt="Slide 1"></li>
+      <li class="glide__slide"><img class="slide" src="img/diet-yoga/img-2.jpg" alt="Slide 2"></li>
+      <li class="glide__slide"><img class="slide" src="img/diet-yoga/img-3.jpg" alt="Slide 3"></li>
+      <li class="glide__slide"><img class="slide" src="img/diet-yoga/img-4.jpg" alt="Slide 4"></li>
+      <li class="glide__slide"><img class="slide" src="img/diet-yoga/img-5.jpg" alt="Slide 5"></li>
+      <li class="glide__slide"><img class="slide" src="img/diet-yoga/img-6.jpg" alt="Slide 6"></li>
+    </ul>
+  </div>
+  <!-- Navigation arrows for Article 1 -->
+  <div class="glide__arrows" data-glide-el="controls">
+    <button class="glide__arrow glide__arrow--left" data-glide-dir="<"><i class="fas fa-arrow-left"></i></button>
+    <button class="glide__arrow glide__arrow--right" data-glide-dir=">"><i class="fas fa-arrow-right"></i></button>
+  </div>
+</div>
+
+<!-- Second Section -->
+<section id="yoga" class="section" style="background-image: url('img/diet-yoga/yoga-bg.jpg');">
+  <div class="overlay"></div>
+  <div class="content">
+    <div class="article">
+      <h1 class="heading">"The Importance of Yoga"</h1>
+      <p>Yoga is a holistic practice that originated in ancient India and has gained widespread popularity worldwide for its numerous physical, mental, and spiritual benefits.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Add space between article and key points -->
+<div style="height: 50px;"></div>
+
+<!-- Key Points Section -->
+<section class="key-points">
+  <h2>Key Points</h2>
+  <ul>
+    <li><b>Physical Benefits:</b> Yoga involves a series of poses (asanas) and movements that promote strength, flexibility, balance, and coordination. Regular practice can improve posture, enhance muscle tone, increase endurance, and reduce the risk of injury.</li><br>
+    <li><b>Mental Benefits:</b> In addition to its physical benefits, yoga is known for its positive effects on mental well-being. Practicing yoga helps reduce stress, anxiety, and depression by promoting relaxation, mindfulness, and a sense of calm. It can also improve concentration, focus, and mental clarity.</li><br>
+    <li><b>Spiritual Connection:</b> Yoga is deeply rooted in spiritual traditions and philosophies, including Hinduism, Buddhism, and Jainism. While modern yoga often focuses on the physical aspects, many practitioners also find spiritual fulfillment and a deeper connection to themselves and the universe through their practice.</li><br>
+    <li><b>Breath Awareness:</b> A fundamental aspect of yoga is breath awareness or pranayama. Practicing breathing techniques helps regulate the breath, increase oxygen intake, and calm the mind. Conscious breathing techniques are often integrated into yoga practice to enhance relaxation and focus.</li><br>
+    <li><b>Mindfulness and Meditation:</b> Yoga practice often incorporates mindfulness and meditation techniques to cultivate present-moment awareness and inner peace. Meditation, along with physical postures and breathing exercises, can promote self-reflection, emotional balance, and spiritual growth.</li><br>
+    <li><b>Adaptability and Accessibility:</b> One of the unique aspects of yoga is its adaptability to individuals of all ages, fitness levels, and abilities. There are various styles and levels of yoga, ranging from gentle and restorative to vigorous and dynamic, making it accessible to everyone.</li><br>
+    <li><b>Stress Management:</b> With its emphasis on relaxation, mindfulness, and stress reduction, yoga is an effective tool for managing the stresses of daily life. Regular practice can help individuals develop coping skills and resilience to navigate life's challenges with greater ease.</li><br>
+    <li><b>Lifelong Practice:</b> Yoga is a lifelong journey of self-discovery and personal growth. Whether practiced casually or as a dedicated discipline, yoga offers continuous opportunities for learning, exploration, and transformation, supporting individuals in living healthier, happier, and more fulfilling lives.</li>
+  </ul>
+</section>
+
+<!-- Carousel for Article 2 -->
+<div class="glide glide2" style="margin-top: 50px;">
+  <div class="glide__track" data-glide-el="track">
+    <ul class="glide__slides">
+      <li class="glide__slide"><img class="slide" src="img/diet-yoga/asana-1.jpg" alt="Slide 1"></li>
+      <li class="glide__slide"><img class="slide" src="img/diet-yoga/asana-2.jpg" alt="Slide 2"></li>
+      <li class="glide__slide"><img class="slide" src="img/diet-yoga/asana-3.jpg" alt="Slide 3"></li>
+      <li class="glide__slide"><img class="slide" src="img/diet-yoga/asana-4.jpg" alt="Slide 4"></li>
+      <li class="glide__slide"><img class="slide" src="img/diet-yoga/asana-5.jpg" alt="Slide 5"></li>
+      <li class="glide__slide"><img class="slide" src="img/diet-yoga/asana-6.jpg" alt="Slide 6"></li>
+      <li class="glide__slide"><img class="slide" src="img/diet-yoga/asana-7.jpg" alt="Slide 7"></li>
+      <li class="glide__slide"><img class="slide" src="img/diet-yoga/asana-8.jpg" alt="Slide 8"></li>
+      <li class="glide__slide"><img class="slide" src="img/diet-yoga/asana-9.jpg" alt="Slide 9"></li>
+      <li class="glide__slide"><img class="slide" src="img/diet-yoga/asana-10.jpg" alt="Slide 10"></li>
+    </ul>
+  </div>
+  <!-- Navigation arrows for Article 2 -->
+  <div class="glide__arrows" data-glide-el="controls">
+    <button class="glide__arrow glide__arrow--left" data-glide-dir="<"><i class="fas fa-arrow-left"></i></button>
+    <button class="glide__arrow glide__arrow--right" data-glide-dir=">"><i class="fas fa-arrow-right"></i></button>
+  </div>
+</div>
+
+<section class="cta-section">
+  <div class="container">
+      <div class="row">
+          <div class="col-lg-12">
+              <div class="cta-text">
+                  <h3>GeT Started Today</h3>
+                  <p>New student special! ₹300 unlimited Gym for the first week and 50% of our member!</p>
+              </div>
+              <a href="form.html" class="primary-btn cta-btn">Register now</a>
+          </div>
+      </div>
+  </div>
+</section>
+<!-- Cta Section End -->
+
+<!-- Footer Section Begin -->
+<footer class="footer-section">
+  <div class="container">
+      <div class="row">
+          <div class="col-lg-3">
+              <div class="footer-logo-item">
+                  <div class="f-logo">
+                    <a href="index.html"><img src="img/log.png" alt=""></a>
+                  </div>
+                  <p>Our ultimate online destination for fitness enthusiasts, offering expert guidance, community support, and a wide range of resources to help you achieve your wellness goals..</p>
+                  <div class="social-links">
+                      <h6>Follow us</h6>
+                      <a href="#"><i class="fa fa-facebook"></i></a>
+                      <a href="#"><i class="fa fa-twitter"></i></a>
+                      <a href="#"><i class="fa fa-google-plus"></i></a>
+                      <a href="#"><i class="fa fa-linkedin"></i></a>
+                      <a href="#"><i class="fa fa-instagram"></i></a>
+                      <a href="#"><i class="fa fa-youtube-play"></i></a>
+                  </div>
+              </div>
+          </div>
+          <div class="col-lg-3 offset-lg-1">
+              <div class="footer-widget">
+                  <h5>Our Blog</h5>
+                  <div class="footer-blog">
+                      <a href="#" class="fb-item">
+                          <h6>Most people workout here</h6>
+                          <span class="blog-time"><i class="fa fa-clock-o"></i> Apr 20, 2024</span>
+                      </a>
+                      <a href="#" class="fb-item">
+                          <h6>HAVE A COMPUTER AT HOME TO WORKOUT</h6>
+                          <span class="blog-time"><i class="fa fa-clock-o"></i> Apr 20, 2024</span>
+                      </a>
+                      <a href="#" class="fb-item">
+                          <h6>EASY HOME REMEDY FOR MOISTURE CONTROL OF SKIN </h6>
+                          <span class="blog-time"><i class="fa fa-clock-o"></i> Apr 20, 2024</span>
+                      </a>
+                  </div>
+              </div>
+          </div>
+          <div class="col-lg-2">
+              <div class="footer-widget">
+                  <h5>Program</h5>
+                  <ul class="workout-program">
+                      <li><a href="#">Bodybuilding</a></li>
+                      <li><a href="#">Yoga & Diet</a></li>
+                      <li><a href="#">Streching</a></li>
+                      <li><a href="#">Weight Loss</a></li>
+                      <li><a href="#">Gym Fitness</a></li>
+                  </ul>
+              </div>
+          </div>
+          <div class="col-lg-3">
+              <div class="footer-widget">
+                  <h5>Get Info</h5>
+                  <ul class="footer-info">
+                      <li>
+                          <i class="fa fa-phone"></i>
+                          <span>Phone:</span>
+                          9876543209
+                      </li>
+                      <li>
+                          <i class="fa fa-envelope-o"></i>
+                          <span>Email:</span>
+                          fitfoundry@gmail.com
+                      </li>
+                      <li>
+                          <i class="fa fa-map-marker"></i>
+                          <span>Address</span>
+                          Andhra Pradesh Kurnool-518001                            </li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+  </div>
+  <div class="copyright-text">
+      <div class="container">
+          <div class="row">
+              <div class="col-lg-12 text-center">
+                  <div class="ct-inside"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                      Copyright &copy;
+                      <script>document.write(new Date().getFullYear());</script> All rights reserved | Fit Foundry</a>
+                      <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --> </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</footer>
+<!-- Footer Section End -->
+
+<!-- Js Plugins -->
+
+<!-- Include Glide.js library -->
+<script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+<script>
+  // Initialize Glide carousel for Article 1
+  new Glide('.glide1', {
+    type: 'carousel',
+    perView: 3,
+    autoplay: 3000,
+    animation: 'fade',
+    animationDuration: 800, // Adjust animation duration in milliseconds (e.g., 800 for 0.8 seconds)
+    animationTimingFunc: 'ease',
+    breakpoints: {
+      768: {
+        perView: 1
+      }
+    }
+  }).mount();
+
+  // Initialize Glide carousel for Article 2
+  new Glide('.glide2', {
+    type: 'carousel',
+    perView: 3,
+    autoplay: 3000,
+    animation: 'fade',
+    animationDuration: 800, // Adjust animation duration in milliseconds (e.g., 800 for 0.8 seconds)
+    animationTimingFunc: 'ease',
+    breakpoints: {
+      768: {
+        perView: 1
+      }
+    }
+  }).mount();
+</script>
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.magnific-popup.min.js"></script>
+<script src="js/mixitup.min.js"></script>
+<script src="js/jquery.nice-select.min.js"></script>
+<script src="js/jquery.slicknav.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/masonry.pkgd.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+
+</html>
